@@ -6,6 +6,11 @@
 	--brightyellow: #f2cb05;
 }
 
+.container {
+	width: 1200px;
+	margin: auto;
+}
+
 .backgroundimg {
 	background-image: url(images/pluizige-vriend.jpg);
 	background-attachment: fixed;
@@ -17,6 +22,19 @@
 .yellowbackground {
 	background-color: var(--yellow);
 	opacity: 20%;
+}
+
+.brownbackground {
+	background-color: var(--brown);
+	padding: 20px 0;
+
+}
+
+.brownbackground p {
+	color: var(white);
+	font-weight: bold;
+
+
 }
 
 
