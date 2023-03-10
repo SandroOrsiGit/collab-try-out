@@ -157,6 +157,46 @@ footer p {
 	font-size: 20px;
 	padding: 15px 0;
 }
+.googlemap {
+	border: 3px solid var(--brown) !important;
+	border-radius: 10px;
+}
+.locatie {
+	width: 100%;
+}
+.contact-container {
+	background-color: var(--brown);
+}
+.contact-container h1,
+.contact-container h2,
+.contact-container h3,
+.contact-container .map,
+.contact-container .locatie-info {
+	padding: 15px;
+	margin: 10px;
+}
+.locatie {
+	background-color: var(--yellow);
+}
+.locatie-info ul li {
+	font-weight: bold;
+	margin: 15px;
+}
+.contact-formulier {
+	font-weight: bold;
+}
+.contact-formulier input {
+	width: 385px;
+}
+.form-button {
+	background-color: var(--orange);
+	font-weight: bold;
+	padding: 5px;
+	margin-bottom: 25px;
+}
+.form-button:hover {
+	background-color: var(--brightyellow);
+}
 
 @media (min-width: 768px) {
 	.nav {
