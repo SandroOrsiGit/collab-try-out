@@ -12,11 +12,9 @@
 }
 
 .backgroundimg {
-	background-image: url(images/pluizige-vriend.jpg);
-	background-attachment: fixed;
-	object-fit: cover;
-	color: var(--orange);
-	padding: 30px 0;
+	background-color: var(--brightyellow);
+	color: var(--brown);
+	padding: 60px 0;
 }
 
 .yellowbackground {
@@ -31,13 +29,10 @@
 .brownbackground {
 	background-color: var(--brown);
 	padding: 20px 0;
-
-}
-
-.brownbackground p {
-	color: var(white);
+	color: var(--white);
 	font-weight: bold;
 }
+
 
 
 button {
@@ -46,4 +41,26 @@ button {
 	border: 0;
 	padding: 10px 40px;
 	border-radius: 50px;
+}
+
+.product {
+	background-color: var(--yellow);
+	padding: 30px;
+	margin: 10px
+}
+
+.product img {
+	width: 220px;
+	height: 300px;
+	object-fit: cover;
+	padding-bottom: 15px;
+}
+
+.producten {
+	margin: 30px auto;
+}
+
+.hond img {
+	width: 700px;
+	height: auto;
 }
