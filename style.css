@@ -5,3 +5,65 @@
 	--white: #f2f2f2;
 	--brightyellow: #f2cb05;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.title {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: var(--brown)
+}
+
+.story {
+	padding: 50px;
+}
+
+.mission {
+	padding: 50px;
+	background-color: var(--yellow);
+}
+
+.img_story,
+.img_mission {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.team {
+	padding: 50px;
+}
+
+.intro {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 15px;
+}
+
+.member {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	background-color: var(--yellow);
+	text-align: center;
+	margin: 30px;
+	color: var(--brown);
+	font-weight: 600;
+}
