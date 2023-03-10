@@ -27,13 +27,13 @@ ul {
 	height: 12vh;
 }
 .logo {
-	display: inline-block;
 	color: var(--white);
 	font-size: 60px;
 	margin-left: 10px;
+	display: none;
 }
 .logo img {
-	max-height: 10vh !important;
+	max-height: 8vh !important;
 }
 .nav {
 	width: 100%;
@@ -42,11 +42,11 @@ ul {
 	background-color: var(--orange);
 	overflow: hidden;
 }
-.nav .menu,
-.nav .menu li {
-	height: 100%;
+.menu {
+	margin-bottom: 0;
 }
-.menu a {
+.menu a,
+footer p {
 	display: block;
 	padding: 15px 50px;
 	color: var(--brown);
@@ -54,13 +54,18 @@ ul {
 	font-size: 24px;
 	margin: auto !important;
 }
+.menu li {
+	margin: auto;
+}
 .menu li a:hover {
 	color: var(--white);
 }
+
 .nav {
 	max-height: 0;
 	transition: max-height 0.5s ease-out;
 }
+
 .hamb {
 	cursor: pointer;
 	float: right;
@@ -111,6 +116,48 @@ ul {
 	top: 0;
 }
 
+.subnav-content {
+	background-color: var(--white);
+	width: 100%;
+	z-index: 1;
+	padding: 20px 0;
+	display: none;
+}
+.subnav-content a {
+	color: var(--black);
+	text-decoration: none;
+	padding: 0;
+	margin: 10px 0;
+	text-align: center;
+}
+.subnav:hover .subnav-content {
+	display: block;
+}
+.subnavbtn {
+	color: var(--white);
+	padding: 30px;
+}
+.subnavbtn:hover {
+	cursor: pointer;
+}
+.footer {
+	background-color: var(--orange);
+	box-shadow: 1px 1px 5px 0px var(--gray);
+	width: 100%;
+	color: var(--brown);
+	height: 8vh;
+}
+.footer p a {
+	color: var(--brown);
+}
+.footer p a:hover {
+	text-decoration: underline !important;
+}
+.footer p {
+	font-size: 20px;
+	padding: 15px 0;
+}
+
 @media (min-width: 768px) {
 	.nav {
 		max-height: none;
@@ -145,28 +192,8 @@ ul {
 		color: white;
 	}
 }
-
-.subnav-content {
-	background-color: var(--white);
-	width: 100%;
-	z-index: 1;
-	padding: 20px 0;
-	display: none;
-}
-.subnav-content a {
-	color: var(--black);
-	text-decoration: none;
-	padding: 0;
-	margin: 10px 0;
-	text-align: center;
-}
-.subnav:hover .subnav-content {
-	display: block;
-}
-.subnavbtn {
-	color: var(--white);
-	padding: 30px;
-}
-.subnavbtn:hover {
-	cursor: pointer;
+@media (min-height: 700px) {
+	.logo {
+		display: inline-block;
+	}
 }
