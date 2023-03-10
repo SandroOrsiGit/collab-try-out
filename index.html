@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
+	<title>Dierenwinkel - Home</title>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -14,8 +15,19 @@
 		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<header class="header">
+			<a href="index.html" class="logo"><img src="images/logo.png" alt="logo" /></a>
+			<input class="side-menu" type="checkbox" id="side-menu" />
+			<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+			<nav class="nav">
+				<ul class="menu d-md-flex align-items-center d-block">
+					<li class="d-flex"><a href="index.html">Home</a></li>
+					<li class="d-flex"><a href="about.html">About</a></li>
+					<li class="d-flex"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 	<div class="backgroundimg">
 		<div class="container">
 			<div class="text-center">
@@ -106,6 +118,12 @@
 			<button>Bestel</button>
 		</div>
 	</div>
+  	<footer class="footer d-flex justify-content-around">
+			<p><a href="index.html">Home</a></p>
+			<p><a href="about.html">About</a></p>
+			<p><a href="contact.html">Contact</a></p>
+			<p>Copyright 2023</p>
+		</footer>
 </body>
 
 </html>
