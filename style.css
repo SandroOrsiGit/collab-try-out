@@ -21,7 +21,11 @@
 
 .yellowbackground {
 	background-color: var(--yellow);
-	opacity: 20%;
+	padding: 30px;
+}
+
+.yellowbackground .container {
+	width: 60%;
 }
 
 .brownbackground {
@@ -33,8 +37,6 @@
 .brownbackground p {
 	color: var(white);
 	font-weight: bold;
-
-
 }
 
 
