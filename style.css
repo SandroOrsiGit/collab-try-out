@@ -6,6 +6,75 @@
 	--brightyellow: #f2cb05;
 }
 
+.container {
+	width: 100%;
+	margin: auto;
+}
+
+.backgroundimg {
+	background-color: var(--brightyellow);
+	color: var(--brown);
+	padding: 60px 0;
+}
+
+.yellowbackground {
+	background-color: var(--yellow);
+	padding: 30px;
+}
+
+.yellowbackground .container {
+	width: 60%;
+}
+
+.brownbackground {
+	background-color: var(--brown);
+	padding: 20px 0;
+	color: var(--white);
+	font-weight: bold;
+}
+
+.cijfers span {
+	font-size: 30px;
+}
+
+button {
+	background-color: var(--orange);
+	color: var(--white);
+	border: 0;
+	padding: 10px 40px;
+	border-radius: 50px;
+}
+
+.product {
+	background-color: var(--yellow);
+	padding: 30px;
+	margin: 10px;
+}
+
+.product img {
+	width: 220px;
+	height: 300px;
+	object-fit: cover;
+	padding-bottom: 15px;
+
+}
+
+.producten {
+	margin: 50px auto;
+
+}
+
+.product button {
+	background-color: white;
+	color: var(--orange);
+}
+
+.hond img {
+	width: 700px;
+	height: auto;
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -66,3 +135,231 @@ img {
 	color: var(--brown);
 	font-weight: 600;
 }
+
+a {
+	text-decoration: none !important;
+}
+ul {
+	list-style: none;
+}
+.header {
+	background-color: var(--orange);
+	box-shadow: 1px 1px 5px 0px var(--gray);
+	position: sticky;
+	top: 0;
+	width: 100%;
+	color: var(--brown);
+	height: 12vh;
+}
+.logo {
+	color: var(--white);
+	font-size: 60px;
+	margin-left: 10px;
+	display: none;
+}
+.logo img {
+	max-height: 8vh !important;
+}
+.nav {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: var(--orange);
+	overflow: hidden;
+}
+.menu {
+	margin-bottom: 0;
+}
+.menu a,
+footer p {
+	display: block;
+	padding: 15px 50px;
+	color: var(--brown);
+	font-weight: 700;
+	font-size: 24px;
+	margin: auto !important;
+}
+.menu li {
+	margin: auto;
+}
+.menu li a:hover {
+	color: var(--white);
+}
+
+.nav {
+	max-height: 0;
+	transition: max-height 0.5s ease-out;
+}
+
+.hamb {
+	cursor: pointer;
+	float: right;
+	padding: 40px 20px;
+}
+
+.hamb-line {
+	background: var(--brown);
+	display: block;
+	height: 2px;
+	position: relative;
+	width: 24px;
+}
+
+.hamb-line::before,
+.hamb-line::after {
+	background: var(--brown);
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all 0.2s ease-out;
+	width: 100%;
+}
+.hamb-line::before {
+	top: 5px;
+}
+.hamb-line::after {
+	top: -5px;
+}
+
+.side-menu {
+	display: none;
+}
+
+.side-menu:checked ~ nav {
+	max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+	background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+	transform: rotate(-45deg);
+	top: 0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+	transform: rotate(45deg);
+	top: 0;
+}
+
+.subnav-content {
+	background-color: var(--white);
+	width: 100%;
+	z-index: 1;
+	padding: 20px 0;
+	display: none;
+}
+.subnav-content a {
+	color: var(--black);
+	text-decoration: none;
+	padding: 0;
+	margin: 10px 0;
+	text-align: center;
+}
+.subnav:hover .subnav-content {
+	display: block;
+}
+.subnavbtn {
+	color: var(--white);
+	padding: 30px;
+}
+.subnavbtn:hover {
+	cursor: pointer;
+}
+.footer {
+	background-color: var(--orange);
+	box-shadow: 1px 1px 5px 0px var(--gray);
+	width: 100%;
+	color: var(--brown);
+	height: 8vh;
+}
+.footer p a {
+	color: var(--brown);
+}
+.footer p a:hover {
+	text-decoration: underline !important;
+}
+.footer p {
+	font-size: 20px;
+	padding: 15px 0;
+}
+.googlemap {
+	border: 3px solid var(--brown) !important;
+	border-radius: 10px;
+}
+.locatie {
+	width: 100%;
+}
+.contact-container {
+	background-color: var(--brown);
+}
+.contact-container h1,
+.contact-container h2,
+.contact-container h3,
+.contact-container .map,
+.contact-container .locatie-info {
+	padding: 15px;
+	margin: 10px;
+}
+.locatie {
+	background-color: var(--yellow);
+}
+.locatie-info ul li {
+	font-weight: bold;
+	margin: 15px;
+}
+.contact-formulier {
+	font-weight: bold;
+}
+.contact-formulier input {
+	width: 385px;
+}
+.form-button {
+	background-color: var(--orange);
+	font-weight: bold;
+	padding: 5px;
+	margin-bottom: 25px;
+}
+.form-button:hover {
+	background-color: var(--brightyellow);
+}
+
+@media (min-width: 768px) {
+	.nav {
+		max-height: none;
+		top: 0;
+		position: relative;
+		float: right;
+		width: fit-content;
+		background-color: transparent;
+	}
+	.menu li {
+		float: left;
+	}
+	.menu a:hover {
+		background-color: transparent;
+		color: var(--gray);
+	}
+	.subnavbtn:hover {
+		background-color: transparent;
+		color: var(--gray);
+	}
+
+	.hamb {
+		display: none;
+	}
+
+	.subnav-content {
+		padding: 20px 0;
+		display: none;
+		background-color: var(--black);
+	}
+	.subnav-content a {
+		color: white;
+	}
+}
+@media (min-height: 700px) {
+	.logo {
+		display: inline-block;
+	}
+}
+
